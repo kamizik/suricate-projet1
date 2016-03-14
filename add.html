@@ -1,0 +1,66 @@
+ <form id="fromsub" class="contact" action="contact.php" name="contact_form" onSubmit="return validateform()" method="post" enctype="multipart/form-data" autocomplete="off">
+                                        
+									
+										
+										
+										<div class="louer" id="selected_product">
+                                            Merci de choisir votre besoin dans la liste des produits.
+                                        </div>
+										
+										<p>
+										   <input class="formcontact" type="text" id="first_name" name="contact-names" required maxlength="50" size="31" spellcheck="false" placeholder="Nom et prénom du patient*">
+										</p>
+										<p> 
+										    <input class="formcontact" type="text" id="contact-email" required name="contact-email" maxlength="50" size="31" spellcheck="false" placeholder="Email*">
+										</p>
+										
+										<p> 
+										    <input class="formcontact" type="text" id="contact-tel" required name="contact-tel" maxlength="50" size="31" spellcheck="false" placeholder="Téléphone*">
+										</p>
+										
+										<p>
+										    <input class="formcontact" type="text" id="contact-mes" required name="contact-mes"maxlength="50" size="31" spellcheck="false" placeholder="Date de naissance*">
+										</p>
+										<p> 
+										    <input class="formcontact" type="text" id="contact-address" required name="contact-address"maxlength="50" size="31" spellcheck="false" placeholder="Adresse de livraison du matériel médical :">
+										</p>
+										<p> 
+										    <input class="formcontact" type="text" id="contact-postale" required name="contact-postale"maxlength="50" size="31" spellcheck="false" placeholder="Code postal  :">
+										</p>
+										<p>
+										    <input class="formcontact" type="text" id="contact-ville" required name="contact-ville"maxlength="50" size="31" spellcheck="false" placeholder="Ville  :">
+										</p>
+										<p> 
+										    <input class="formcontact" type="text" id="datepicker" required name="contact-date" maxlength="50" size="31" spellcheck="false" placeholder="Date de livraison  :">
+										</p>
+										
+										 <p><center><textarea id="livr_departement" rows="2" cols="20" name="contact_message" placeholder="Votre message..."></textarea></center></p>
+
+										 <p>
+										    <input type="file" name="file" />
+											<a id="file">Joindre mon ordonnance
+                                               <a style="padding-left:50px" href="#" class="tooltip_file">
+                                                   <img src="lib/images/rsz_info_black_pop.png"/>
+                                                   <span> Joindre l'ordonnance vous permet de nous envoyer l'ordonnance. La numériser ou la prendre en photo et le dossier est complet.<br>
+Si vous préférez vous avez aussi la possibilité de nous l'envoyer par mail à contact@lmad.fr.</span>
+                                              </a>
+</a>
+										</p>
+                                       <!-- <input class="contact-input white-input" type="text" required name="contact-mes" placeholder="Date de naissance*" />
+                                        <input class="contact-input white-input" type="text" required name="contact-address" placeholder="Adresse de livraison du matériel médical" />
+                                        <input class="contact-input white-input postale" type="text" required name="contact-postale" placeholder="Code postal :" />
+                                        <input class="contact-input white-input ville" type="text" required name="contact-ville" placeholder="Ville :" />
+                                        <input id="datepicker" class="contact-input white-input" type="text" required name="contact-date" placeholder="Date de livraison" />
+										-->
+                                       
+                                        <div class="contact-input white-input under-link">
+                                            <input type="file" name="file" />
+                                            <a id="file">Joindre mon ordonnance
+                                <a href="#" class="tooltip_file">
+                                <img src="lib/images/rsz_info_black_pop.png"/>
+                                <span> Joindre l'ordonnance vous permet de nous envoyer l'ordonnance. La numériser ou la prendre en photo et le dossier est complet.<br>
+Si vous préférez vous avez aussi la possibilité de nous l'envoyer par mail à contact@lmad.fr.</span></a></a>
+                                        </div>
+                                        <input type="hidden" name="contact-Panier" value="" autocomplete="off" />
+                                        <input type="submit" style="margin-left: -16px;" value="Passer la commande" id="submit-button" class="contact-submit" />
+                                    </form>
